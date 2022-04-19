@@ -1,0 +1,27 @@
+# This program generates a sequence of a^nb^n from a strin of a's as input
+
+[o    # Start loop
+,d    # Read a byte from the input and write it to the stack two times
+'a    # Push a literal 'a' to the stack
+=!s]  # Check if the top two values aren't equal (getch() != 'a')
+o
+
+# Stack is now filled with input a's so a^n
+
+[o      # Start loop   
+a'bmwaa # Push one ab to the stack
+es]     # Jump back to the start of the loop if the stack is not empty 
+
+# Auxiliary stack is now filled with (ab)^n
+# Start converting (ab)^n into a^nb^n
+
+[o # Start loop building a^nb^n
+[o      # Start loop moving all top a's from aux stack to main stack 
+zs([opes]'\npx) # Terminate the program if the aux stack is empty and print complete stack
+m # Move an a over to the main stack
+d'a=!s] # All top a's and one 'b element from aux stack are on top of main stack now
+
+[o  # Start loop bubbling a 'b down to the bottom of the main stack
+wd'a=s(aaemws])
+]
+
