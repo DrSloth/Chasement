@@ -38,3 +38,9 @@ can't be tested, but every grammar of the form `a^nb^nc^n`, `a^nb^nc^nd^n`... ca
 
 ## Instructions
 TODO add documentation of all instructions
+
+## License
+This project is licensed under the MIT license see [LICENSE](/LICENSE) for more info.
+
+Unless you explicitly state otherwise, any contribution intentionally submitted for inclusion by
+you shall be licensed under the MIT license too.
