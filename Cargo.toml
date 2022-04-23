@@ -2,8 +2,12 @@
 name = "chasement"
 version = "0.1.0"
 edition = "2021"
-
-# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+repository = "https://github.com/DrSloth/Chasement"
+home = "https://github.com/DrSloth/Chasement"
+keywords = ["language", "automata theory"]
+description = "A small interpreted language to simulate a push down automaton with 2 stacks"
+license = "MIT"
+readme = "README.md"
 
 [dependencies]
 nohash = "0.2.0"
