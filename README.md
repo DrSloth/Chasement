@@ -1,16 +1,16 @@
-## Name
-The name is a wordplay on "basement" and character. 
-
-Every instruction in the language is a single character and the language is stack based. The german
-name for a pushdown automaton (an automaton with a stack) is "Kellerautomat" which can be translated
-as something like "basement automaton" thus char and basement.
-
 ## Idea 
 This is a simulation of pushdown automaton with 2 stacks. A main stack and an auxiliary stack. 
 The aux stack can not be read or written directly. There are two instructions to interact with 
 the aux stack: `aux`('a') and `main`('m'). The aux instruction takes the top element of the main
 stack and moves it to the top of the aux stack. The main instruction does the same in reverse,
 move the top element of the aux stack to the main stack.
+
+## Name
+The name is a wordplay on "basement" and character. 
+
+Every instruction in the language is a single character and the language is stack based. The german
+name for a pushdown automaton (an automaton with a stack) is "Kellerautomat" which can be translated
+as something like "basement automaton" thus char and basement.
 
 ### "Proof" why this should be turing complete
 A PDA with two Stacks is (or at least should be) turing complete. 
