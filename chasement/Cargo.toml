@@ -3,11 +3,18 @@ name = "chasement"
 version = "0.1.0"
 edition = "2021"
 repository = "https://github.com/DrSloth/Chasement"
-home = "https://github.com/DrSloth/Chasement"
 keywords = ["language", "automata","theory"]
 description = "A small interpreted language to simulate a push down automaton with 2 stacks"
 license = "MIT"
 readme = "README.md"
 
+[features]
+# Enable a owned version of the virtual machine
+#owned_vm = ["ouroboros"]
+
 [dependencies]
+# Very fast hashing for instructions
 nohash = "0.2.0"
+
+# Building a potentially owned VM requires self referentialism.
+#ouroboros = { version = "0.15.0", optional = true}
